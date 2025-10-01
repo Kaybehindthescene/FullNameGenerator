@@ -20,14 +20,14 @@ public class FullNameApplication {
         String suffix = nameScanner.nextLine().trim();
 
         String fullName = firstName;
+
+        if (middleName.length() == 1){
+            middleName += ".";
+        }
         if (middleName.length() > 0){
             fullName = firstName += " " + middleName;
 
         }
-        if (middleName.length() == 1){
-            middleName += ".";
-        }
-
 
         fullName += " " + lastName;
 
